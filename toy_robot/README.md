@@ -23,7 +23,13 @@ Digite Remote-Containers: Reopen in Container e selecione a opção.
 O VSCode irá construir o DevContainer e abrir o projeto dentro dele. Isso pode levar alguns minutos na primeira vez que for executado.
 
 ## Rodar a Aplicação
-Com o DevContainer configurado, você pode rodar a aplicação utilizando o script bin/dev. Para isso, abra um terminal no VSCode (dentro do DevContainer) e caminhe até a pasta "toy_robot" e execute:
+Com o DevContainer configurado, você pode rodar a aplicação utilizando o script bin/dev. Para isso, abra um terminal no VSCode (dentro do DevContainer) e caminhe até a pasta "toy_robot" e execute para instalar as dependencias:
+
+```sh
+bundle install && rake db:setup
+```
+
+Após a instalação, execute:
 
 ```sh
 bin/dev
